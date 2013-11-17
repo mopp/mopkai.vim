@@ -6,5 +6,5 @@ But, this supports only color terminal yet.
 
 
 # ScreenShot
-![Vim script](./ss_vim.jpg)
+![Vim script](./ss_vim.png)
 ![C](./ss_c.png)
