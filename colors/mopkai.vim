@@ -5,14 +5,14 @@
 " Note: Based on the molokai theme by Tomas Restrepo
 "
 
-let g:colors_name = expand('<sfile>:t:r')
-if exists('g:loaded_'.g:colors_name)
+if exists('g:loaded_mopkai')
     finish
 endif
-let g:loaded_{g:colors_name} = 1
+let g:loaded_mopkai = 1
 
 set background=dark
-highlight clear
+hi clear
+let g:colors_name='mopkai'
 
 let c_gnu = 1
 let c_comment_strings = 1
