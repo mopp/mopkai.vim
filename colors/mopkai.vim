@@ -111,6 +111,8 @@ if has('gui_running')
     hi LineNr          guifg=#465457 guibg=#232526
     hi NonText         guifg=#465457
     hi SpecialKey      guifg=#465457
+
+    hi link Include PreProc
 else
     " color terminal
     " :help hi-normal-cterm
