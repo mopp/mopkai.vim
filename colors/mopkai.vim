@@ -17,46 +17,78 @@ let g:colors_name='mopkai'
 let c_gnu = 1
 let c_comment_strings = 1
 
-
 if has('gui_running')
     " syntax-group
-    hi Boolean         guifg=#AE81FF
-    hi Character       guifg=#E6DB74
-    hi Number          guifg=#AE81FF
-    hi String          guifg=#E6DB74
-    hi Conditional     guifg=#F92672               gui=bold
-    hi Constant        guifg=#AE81FF               gui=bold
+    hi Normal          guifg=#DADADA guibg=#121212
+
+    hi Comment         guifg=#8787AF
+
+    hi Constant        guifg=#AF5FFF               gui=bold
+    hi String          guifg=#FFFFAF
+    hi Character       guifg=#FFFFAF
+    hi Number          guifg=#AF5FFF
+    hi Boolean         guifg=#AF5FFF
+    hi Float           guifg=#AF5FFF
+
+    hi Identifier      guifg=#FF8700
+    hi Function        guifg=#87FF00
+
+    hi Statement       guifg=#D7005F               gui=bold
+    hi Conditional     guifg=#D7005F               gui=bold
+    hi Repeat          guifg=#D7005F               gui=bold
+    hi Label           guifg=#AFFF00               gui=none
+    hi Operator        guifg=#5FFF00
+    hi Keyword         guifg=#5FFF00               gui=bold
+    hi Exception       guifg=#87FF00               gui=bold
+
+    hi PreProc         guifg=#87FF00
+    hi Include         guifg=#0087D7
+    hi Define          guifg=#D75F87
+    hi Macro           guifg=#D75F87               gui=italic
+    hi PreCondit       guifg=#87FF00               gui=bold
+
+    hi Type            guifg=#5FD7FF               gui=none
+    hi StorageClass    guifg=#FF8700               gui=italic
+    hi Structure       guifg=#0087D7
+    hi Typedef         guifg=#5FD7FF
+
+    hi Special         guifg=#5FD7FF               gui=italic
+    hi SpecialChar     guifg=#D7005F               gui=bold
+    hi Tag             guifg=#D7005F               gui=italic
+    hi Delimiter       guifg=#606060
+    hi SpecialComment  guifg=#8A8A8A               gui=bold
+    hi Debug           guifg=#FFD7FF               gui=bold
+
+    hi Underlined      guifg=#808080               gui=underline
+    hi Ignore          guifg=#808080 guibg=#080808
+    hi Error           guifg=#FFAFFF guibg=#87005F
+    hi Todo            guifg=#FFFFFF guibg=#080808      gui=bold
+
+    hi TabLine         guifg=#080808 guibg=#B2B2B2 gui=none
+    hi TabLineSel      guifg=#080808 guibg=#FF00B7 gui=bold
+    hi TabLineFill                   guibg=#B2B2B2
+
+    hi Search          guifg=#FFFFFF guibg=#FF5F00
+
+
     hi Cursor          guifg=#000000 guibg=#F8F8F0
     hi iCursor         guifg=#000000 guibg=#F8F8F0
-    hi Debug           guifg=#BCA3A3               gui=bold
-    hi Define          guifg=#66D9EF
-    hi Delimiter       guifg=#8F8F8F
     hi DiffAdd                       guibg=#13354A
     hi DiffChange      guifg=#89807D guibg=#4C4745
     hi DiffDelete      guifg=#960050 guibg=#1E0010
     hi DiffText                      guibg=#4C4745 gui=italic,bold
 
     hi Directory       guifg=#A6E22E               gui=bold
-    hi Error           guifg=#E6DB74 guibg=#1E0010
     hi ErrorMsg        guifg=#F92672 guibg=#232526 gui=bold
-    hi Exception       guifg=#A6E22E               gui=bold
-    hi Float           guifg=#AE81FF
     hi FoldColumn      guifg=#465457 guibg=#000000
     hi Folded          guifg=#465457 guibg=#000000
-    hi Function        guifg=#A6E22E
-    hi Identifier      guifg=#FD971F
-    hi Ignore          guifg=#808080 guibg=bg
     hi IncSearch       guifg=#C4BE89 guibg=#000000
 
-    hi Keyword         guifg=#F92672               gui=bold
-    hi Label           guifg=#E6DB74               gui=none
-    hi Macro           guifg=#C4BE89               gui=italic
     hi SpecialKey      guifg=#66D9EF               gui=italic
 
     hi MatchParen      guifg=#000000 guibg=#FD971F gui=bold
     hi ModeMsg         guifg=#E6DB74
     hi MoreMsg         guifg=#E6DB74
-    hi Operator        guifg=#F92672
 
     " complete menu
     hi Pmenu           guifg=#66D9EF guibg=#000000
@@ -64,34 +96,19 @@ if has('gui_running')
     hi PmenuSbar                     guibg=#080808
     hi PmenuThumb      guifg=#66D9EF
 
-    hi PreCondit       guifg=#A6E22E               gui=bold
-    hi PreProc         guifg=#A6E22E
     hi Question        guifg=#66D9EF
-    hi Repeat          guifg=#F92672               gui=bold
-    hi Search          guifg=#FFFFFF guibg=#455354
+
     " marks
     hi SignColumn      guifg=#A6E22E guibg=#232526
-    hi SpecialChar     guifg=#F92672               gui=bold
-    hi SpecialComment  guifg=#7E8E91               gui=bold
-    hi Special         guifg=#66D9EF guibg=bg      gui=italic
     if has("spell")
         hi SpellBad    guisp=#FF0000 gui=undercurl
         hi SpellCap    guisp=#7070F0 gui=undercurl
         hi SpellLocal  guisp=#70F0F0 gui=undercurl
         hi SpellRare   guisp=#FFFFFF gui=undercurl
     endif
-    hi Statement       guifg=#F92672               gui=bold
     hi StatusLine      guifg=#455354 guibg=fg
     hi StatusLineNC    guifg=#808080 guibg=#080808
-    hi StorageClass    guifg=#FD971F               gui=italic
-    hi Structure       guifg=#66D9EF
-    hi Tag             guifg=#F92672               gui=italic
     hi Title           guifg=#ef5939
-    hi Todo            guifg=#FFFFFF guibg=bg      gui=bold
-
-    hi Typedef         guifg=#66D9EF
-    hi Type            guifg=#66D9EF               gui=none
-    hi Underlined      guifg=#808080               gui=underline
 
     hi VertSplit       guifg=#808080 guibg=#080808 gui=bold
     hi VisualNOS                     guibg=#403D3D
@@ -99,11 +116,6 @@ if has('gui_running')
     hi WarningMsg      guifg=#FFFFFF guibg=#333333 gui=bold
     hi WildMenu        guifg=#66D9EF guibg=#000000
 
-    hi TabLineFill     guifg=#1B1D1E guibg=#1B1D1E
-    hi TabLine         guibg=#1B1D1E guifg=#808080 gui=none
-
-    hi Normal          guifg=#F8F8F2 guibg=#1B1D1E
-    " hi Comment         guifg=#7E8E91
     hi CursorLine                    guibg=#293739
     hi CursorLineNr    guifg=#FD971F               gui=none
     hi CursorColumn                  guibg=#293739
@@ -111,8 +123,6 @@ if has('gui_running')
     hi LineNr          guifg=#465457 guibg=#232526
     hi NonText         guifg=#465457
     hi SpecialKey      guifg=#465457
-
-    hi link Include PreProc
 else
     " color terminal
     " :help hi-normal-cterm
@@ -161,6 +171,12 @@ else
     hi Error           ctermfg=219 ctermbg=89
     hi Todo            ctermfg=231 ctermbg=232 cterm=bold
 
+    hi TabLine         ctermfg=232 ctermbg=249 cterm=none
+    hi TabLineSel      ctermfg=232 ctermbg=198 cterm=bold
+    hi TabLineFill                 ctermbg=249 cterm=none
+
+    hi Search          ctermfg=232 ctermbg=202 cterm=bold
+
 
     hi Cursor          ctermfg=16  ctermbg=253 cterm=none
     hi CursorLine                  ctermbg=235 cterm=none
@@ -190,7 +206,6 @@ else
     hi PmenuThumb      ctermfg=81
 
     hi Question        ctermfg=81
-    hi Search          ctermfg=253 ctermbg=66
 
     " marks column
     hi SignColumn      ctermfg=118 ctermbg=233
@@ -210,12 +225,6 @@ else
     hi Visual                      ctermbg=235
     hi WarningMsg      ctermfg=231 ctermbg=238   cterm=bold
     hi WildMenu        ctermfg=81  ctermbg=16
-
-    hi TabLine          ctermfg=232 ctermbg=249   cterm=none
-    hi TabLineSel       ctermfg=232 ctermbg=198   cterm=bold
-    hi TabLineFill                  ctermbg=249   cterm=none
-
-    hi Search           ctermfg=0   ctermbg=3
 
     hi CursorColumn                ctermbg=236
     hi ColorColumn                 ctermbg=236
