@@ -70,6 +70,13 @@ if has('gui_running')
 
     hi Search          guifg=#FFFFFF guibg=#FF5F00
 
+    if has('spell')
+        hi SpellBad    guisp=#AF0000 gui=undercurl
+        hi SpellCap    guisp=#AF005F gui=undercurl
+        hi SpellLocal  guisp=#AF005F gui=undercurl
+        hi SpellRare   guisp=NONE    gui=none
+    endif
+
 
     hi Cursor          guifg=#000000 guibg=#F8F8F0
     hi iCursor         guifg=#000000 guibg=#F8F8F0
@@ -100,12 +107,6 @@ if has('gui_running')
 
     " marks
     hi SignColumn      guifg=#A6E22E guibg=#232526
-    if has("spell")
-        hi SpellBad    guisp=#FF0000 gui=undercurl
-        hi SpellCap    guisp=#7070F0 gui=undercurl
-        hi SpellLocal  guisp=#70F0F0 gui=undercurl
-        hi SpellRare   guisp=#FFFFFF gui=undercurl
-    endif
     hi StatusLine      guifg=#455354 guibg=fg
     hi StatusLineNC    guifg=#808080 guibg=#080808
     hi Title           guifg=#ef5939
@@ -167,15 +168,22 @@ else
     hi Debug           ctermfg=225             cterm=bold
 
     hi Underlined      ctermfg=244             cterm=underline
-    hi Ignore          ctermfg=244 ctermbg=232
-    hi Error           ctermfg=219 ctermbg=89
-    hi Todo            ctermfg=231 ctermbg=232 cterm=bold
+    hi Ignore          ctermfg=244  ctermbg=232
+    hi Error           ctermfg=219  ctermbg=89
+    hi Todo            ctermfg=231  ctermbg=232 cterm=bold
 
-    hi TabLine         ctermfg=232 ctermbg=249 cterm=none
-    hi TabLineSel      ctermfg=232 ctermbg=198 cterm=bold
-    hi TabLineFill                 ctermbg=249 cterm=none
+    hi TabLine         ctermfg=232  ctermbg=249 cterm=none
+    hi TabLineSel      ctermfg=232  ctermbg=198 cterm=bold
+    hi TabLineFill                  ctermbg=249 cterm=none
 
-    hi Search          ctermfg=232 ctermbg=202 cterm=bold
+    hi Search          ctermfg=232  ctermbg=202 cterm=bold
+
+    if has('spell')
+        hi SpellBad                 ctermbg=124
+        hi SpellCap                 ctermbg=125
+        hi SpellLocal               ctermbg=125
+        hi SpellRare   ctermfg=none ctermbg=none cterm=none
+    endif
 
 
     hi Cursor          ctermfg=16  ctermbg=253 cterm=none
@@ -209,12 +217,6 @@ else
 
     " marks column
     hi SignColumn      ctermfg=118 ctermbg=233
-    if has("spell")
-        hi SpellBad                ctermbg=52
-        hi SpellCap                ctermbg=17
-        hi SpellLocal              ctermbg=17
-        hi SpellRare  ctermfg=none ctermbg=none  cterm=reverse
-    endif
     hi StatusLine      ctermfg=238 ctermbg=253
     hi StatusLineNC    ctermfg=244 ctermbg=232
     hi Title           ctermfg=166
