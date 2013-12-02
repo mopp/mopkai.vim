@@ -77,6 +77,9 @@ if has('gui_running')
         hi SpellRare   guisp=NONE    gui=none
     endif
 
+    hi FoldColumn      guifg=#5F87AF guibg=#121212
+    hi Folded          guifg=#5F87AF guibg=#000000
+    " ここまで
 
     hi Cursor          guifg=#000000 guibg=#F8F8F0
     hi iCursor         guifg=#000000 guibg=#F8F8F0
@@ -87,8 +90,6 @@ if has('gui_running')
 
     hi Directory       guifg=#A6E22E               gui=bold
     hi ErrorMsg        guifg=#F92672 guibg=#232526 gui=bold
-    hi FoldColumn      guifg=#465457 guibg=#000000
-    hi Folded          guifg=#465457 guibg=#000000
     hi IncSearch       guifg=#C4BE89 guibg=#000000
 
     hi SpecialKey      guifg=#66D9EF               gui=italic
@@ -185,6 +186,10 @@ else
         hi SpellRare   ctermfg=none ctermbg=none cterm=none
     endif
 
+    hi FoldColumn      ctermfg=67  ctermbg=233
+    hi Folded          ctermfg=67  ctermbg=16
+    " ここまで
+
 
     hi Cursor          ctermfg=16  ctermbg=253 cterm=none
     hi CursorLine                  ctermbg=235 cterm=none
@@ -197,8 +202,6 @@ else
 
     hi Directory       ctermfg=118               cterm=bold
     hi ErrorMsg        ctermfg=199 ctermbg=16    cterm=bold
-    hi FoldColumn      ctermfg=67  ctermbg=233
-    hi Folded          ctermfg=67  ctermbg=16
     hi IncSearch       ctermfg=193 ctermbg=16
 
     hi SpecialKey      ctermfg=81
