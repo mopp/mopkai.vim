@@ -43,8 +43,8 @@ if has('gui_running')
 
     hi PreProc         guifg=#87FF00
     hi Include         guifg=#0087D7
-    hi Define          guifg=#D75F87
-    hi Macro           guifg=#D75F87               gui=italic
+    hi Define          guifg=#FF005F               gui=italic,bold
+    hi Macro           guifg=#FF005F               gui=italic,bold
     hi PreCondit       guifg=#87FF00               gui=bold
 
     hi Type            guifg=#5FD7FF               gui=none
