@@ -13,3 +13,4 @@ You have to write 'colorscheme mopkai' after syntax
 # ScreenShot
 ![Vim script](./ss_vim.png)
 ![C](./ss_c.png)
+![C++](./ss_cpp.png)
