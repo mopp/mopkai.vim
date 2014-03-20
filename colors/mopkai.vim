@@ -190,7 +190,12 @@ else
         hi SpellRare   ctermfg=none ctermbg=none cterm=none
     endif
 
-    hi FoldColumn      ctermfg=67  ctermbg=233
+    if get(g:, 'mopkai_is_not_set_normal_ctermbg', 0)
+        hi FoldColumn      None
+        hi FoldColumn      ctermfg=67
+    else
+        hi FoldColumn      ctermfg=67  ctermbg=233
+    endif
     hi Folded          ctermfg=67  ctermbg=16
     " ここまで
 
@@ -223,7 +228,12 @@ else
     hi Question        ctermfg=81
 
     " marks column
-    hi SignColumn      ctermfg=118 ctermbg=233
+    if get(g:, 'mopkai_is_not_set_normal_ctermbg', 0)
+        hi SignColumn      None
+        hi SignColumn      ctermfg=118
+    else
+        hi SignColumn      ctermfg=118 ctermbg=233
+    endif
     hi StatusLine      ctermfg=238 ctermbg=253
     hi StatusLineNC    ctermfg=244 ctermbg=232
     hi Title           ctermfg=166
@@ -237,7 +247,8 @@ else
 
     hi CursorColumn                ctermbg=236
     hi ColorColumn                 ctermbg=236
-    hi LineNr          ctermfg=250 ctermbg=232
+    hi LineNr          None
+    hi LineNr          ctermfg=250
     hi NonText         ctermfg=59
 
     hi SpecialKey      ctermfg=59
