@@ -128,7 +128,11 @@ if has('gui_running')
 else
     " color terminal
     " :help hi-normal-cterm
-    hi Normal          ctermfg=253 ctermbg=233
+    if get(g:, 'mopkai_is_not_set_normal_ctermbg', 0)
+        hi Normal          ctermfg=253
+    else
+        hi Normal          ctermfg=253 ctermbg=233
+    endif
 
     hi Comment         ctermfg=103
 
