@@ -196,12 +196,12 @@ else
     else
         hi FoldColumn      ctermfg=67  ctermbg=233
     endif
-    hi Folded          ctermfg=67  ctermbg=16
+    hi Folded          ctermfg=67  ctermbg=234
     " ここまで
 
 
     hi Cursor          ctermfg=16  ctermbg=253 cterm=none
-    hi CursorLine                  ctermbg=235 cterm=none
+    hi CursorLine                  ctermbg=234 cterm=none
     hi CursorLineNr    ctermfg=208             cterm=none
 
     hi DiffAdd                     ctermbg=24
