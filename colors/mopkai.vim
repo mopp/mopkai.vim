@@ -43,8 +43,8 @@ if has('gui_running')
 
     hi PreProc         guifg=#87FF00
     hi Include         guifg=#0087D7
-    hi Define          guifg=#FF005F               gui=italic,bold
-    hi Macro           guifg=#FF005F               gui=italic,bold
+    hi Define          guifg=#d75f87               gui=italic,bold
+    hi Macro           guifg=#d75f87               gui=italic,bold
     hi PreCondit       guifg=#87FF00               gui=bold
 
     hi Type            guifg=#5FD7FF               gui=none
@@ -136,43 +136,43 @@ else
 
     hi Comment         ctermfg=103
 
-    hi Constant        ctermfg=135             cterm=bold
+    hi Constant        ctermfg=135              cterm=bold
     hi String          ctermfg=229
     hi Character       ctermfg=229
     hi Number          ctermfg=135
-    hi Boolean         ctermfg=135             cterm=bold
+    hi Boolean         ctermfg=135              cterm=bold
     hi Float           ctermfg=135
 
-    hi Identifier      ctermfg=208             cterm=none
+    hi Identifier      ctermfg=208              cterm=none
     hi Function        ctermfg=118
 
-    hi Statement       ctermfg=161             cterm=bold
-    hi Conditional     ctermfg=161             cterm=bold
-    hi Repeat          ctermfg=161             cterm=bold
-    hi Label           ctermfg=154             cterm=none
+    hi Statement       ctermfg=161              cterm=bold
+    hi Conditional     ctermfg=161              cterm=bold
+    hi Repeat          ctermfg=161              cterm=bold
+    hi Label           ctermfg=154              cterm=none
     hi Operator        ctermfg=82
-    hi keyword         ctermfg=82              cterm=bold
-    hi Exception       ctermfg=118             cterm=bold
+    hi keyword         ctermfg=82               cterm=bold
+    hi Exception       ctermfg=118              cterm=bold
 
     hi PreProc         ctermfg=118
     hi Include         ctermfg=32
     hi Define          ctermfg=168
     hi Macro           ctermfg=168
-    hi PreCondit       ctermfg=118             cterm=bold
+    hi PreCondit       ctermfg=118              cterm=bold
 
-    hi Type            ctermfg=81              cterm=none
+    hi Type            ctermfg=81               cterm=none
     hi StorageClass    ctermfg=208
-    hi Structure       ctermfg=32              cterm=bold
+    hi Structure       ctermfg=32               cterm=bold
     hi Typedef         ctermfg=81
 
     hi Special         ctermfg=81
-    hi SpecialChar     ctermfg=161             cterm=bold
+    hi SpecialChar     ctermfg=161              cterm=bold
     hi Tag             ctermfg=161
     hi Delimiter       ctermfg=241
-    hi SpecialComment  ctermfg=245             cterm=bold
-    hi Debug           ctermfg=225             cterm=bold
+    hi SpecialComment  ctermfg=245              cterm=bold
+    hi Debug           ctermfg=225              cterm=bold
 
-    hi Underlined      ctermfg=244             cterm=underline
+    hi Underlined      ctermfg=244              cterm=underline
     hi Ignore          ctermfg=244  ctermbg=232
     hi Error           ctermfg=219  ctermbg=89
     hi Todo            ctermfg=231  ctermbg=232 cterm=bold
