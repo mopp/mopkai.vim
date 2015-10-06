@@ -144,14 +144,14 @@ else
     hi Float           ctermfg=135
 
     hi Identifier      ctermfg=208              cterm=none
-    hi Function        ctermfg=118
+    hi Function        ctermfg=253              cterm=bold
 
     hi Statement       ctermfg=161              cterm=bold
     hi Conditional     ctermfg=161              cterm=bold
     hi Repeat          ctermfg=161              cterm=bold
     hi Label           ctermfg=154              cterm=none
     hi Operator        ctermfg=82
-    hi keyword         ctermfg=82               cterm=bold
+    hi keyword         ctermfg=161               cterm=bold
     hi Exception       ctermfg=118              cterm=bold
 
     hi PreProc         ctermfg=118
