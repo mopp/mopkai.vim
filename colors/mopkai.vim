@@ -144,21 +144,21 @@ else
     hi Float           ctermfg=135
 
     hi Identifier      ctermfg=208              cterm=none
-    hi Function        ctermfg=118               cterm=bold
+    hi Function        ctermfg=118
 
     hi Statement       ctermfg=161              cterm=bold
     hi Conditional     ctermfg=161              cterm=bold
     hi Repeat          ctermfg=161              cterm=bold
     hi Label           ctermfg=154              cterm=none
     hi Operator        ctermfg=82
-    hi keyword         ctermfg=161               cterm=bold
+    hi keyword         ctermfg=161              cterm=bold
     hi Exception       ctermfg=118              cterm=bold
 
-    hi PreProc         ctermfg=75
+    hi PreProc         ctermfg=118
     hi Include         ctermfg=32
     hi Define          ctermfg=168
     hi Macro           ctermfg=168
-    hi PreCondit       ctermfg=75              cterm=bold
+    hi PreCondit       ctermfg=75               cterm=bold
 
     hi Type            ctermfg=81               cterm=none
     hi StorageClass    ctermfg=208
