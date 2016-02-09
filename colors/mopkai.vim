@@ -17,7 +17,7 @@ let g:colors_name='mopkai'
 let c_gnu = 1
 let c_comment_strings = 1
 
-if has('gui_running')
+if has('nvim') || has('gui_running')
     " syntax-group
     hi Normal          guifg=#DADADA guibg=#121212
 
@@ -125,7 +125,9 @@ if has('gui_running')
     hi LineNr          guifg=#465457 guibg=#232526
     hi NonText         guifg=#465457
     hi SpecialKey      guifg=#465457
-else
+endif
+
+if has('nvim') || !has('gui_running')
     " color terminal
     " :help hi-normal-cterm
     if get(g:, 'mopkai_is_not_set_normal_ctermbg', 0)
